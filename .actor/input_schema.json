@@ -1,0 +1,22 @@
+{
+  "$schema": "https://apify.com/schemas/v1/input.ide.json",
+  "title": "n8n Failed Execution Doctor",
+  "description": "Diagnose a failed n8n execution from a workflow export and execution JSON. No credentials or live n8n access required.",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "workflow": {
+      "title": "n8n workflow JSON",
+      "type": "object",
+      "description": "Exported n8n workflow object.",
+      "editor": "json"
+    },
+    "execution": {
+      "title": "Failed execution JSON",
+      "type": "object",
+      "description": "Saved or API-returned failed n8n execution object. Remove data you do not want analyzed.",
+      "editor": "json"
+    }
+  },
+  "required": ["workflow", "execution"]
+}

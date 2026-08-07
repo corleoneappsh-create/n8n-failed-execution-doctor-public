@@ -1,0 +1,19 @@
+{
+  "$schema": "https://apify.com/schemas/v1/actor.ide.json",
+  "actorSpecification": 1,
+  "name": "n8n-failed-execution-doctor",
+  "title": "n8n Failed Execution Doctor",
+  "description": "Diagnose failed n8n execution JSON and return the failing node, error category, sanitized message, and a concrete next step.",
+  "version": "0.1",
+  "buildTag": "latest",
+  "meta": {
+    "templateId": "ts-empty",
+    "generatedBy": "OpenAI"
+  },
+  "inputSchema": "./input_schema.json",
+  "outputSchema": "./output_schema.json",
+  "storages": {
+    "dataset": "./dataset_schema.json"
+  },
+  "dockerfile": "../Dockerfile"
+}

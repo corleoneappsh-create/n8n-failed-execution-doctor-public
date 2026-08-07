@@ -1,0 +1,23 @@
+{
+  "$schema": "https://apify.com/schemas/v1/dataset.ide.json",
+  "actorSpecification": 1,
+  "fields": {},
+  "views": {
+    "overview": {
+      "title": "Diagnosis",
+      "transformation": {
+        "fields": ["workflowName", "diagnosticStatus", "primaryCategory", "lastNodeExecuted", "failureCount"]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "workflowName": { "label": "Workflow", "format": "text" },
+          "diagnosticStatus": { "label": "Status", "format": "text" },
+          "primaryCategory": { "label": "Root cause", "format": "text" },
+          "lastNodeExecuted": { "label": "Last node", "format": "text" },
+          "failureCount": { "label": "Failures", "format": "number" }
+        }
+      }
+    }
+  }
+}

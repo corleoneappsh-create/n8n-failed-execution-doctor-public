@@ -1,0 +1,17 @@
+{
+  "$schema": "https://apify.com/schemas/v1/output.ide.json",
+  "actorOutputSchemaVersion": 1,
+  "title": "Diagnosis output",
+  "properties": {
+    "results": {
+      "type": "string",
+      "title": "Diagnosis dataset",
+      "template": "{{links.apiDefaultDatasetUrl}}/items"
+    },
+    "diagnosis": {
+      "type": "string",
+      "title": "Diagnosis record",
+      "template": "{{links.apiDefaultKeyValueStoreUrl}}/records/DIAGNOSIS"
+    }
+  }
+}
