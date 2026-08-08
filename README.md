@@ -17,6 +17,21 @@ This is not another generic workflow linter. It focuses on incidents that alread
 
 It is deterministic: no external LLM call is required for the core diagnosis, which keeps latency and platform cost low.
 
+
+## Pro workflow — batch diagnosis and incident reports
+
+If you need a self-contained n8n workflow rather than the Actor, **n8n Failed Execution Doctor Pro v0.3.0** adds:
+
+- batch diagnosis for multiple failed-execution items in one run;
+- deterministic severity and retry-safety heuristics;
+- workflow risk hints;
+- ready-to-copy Markdown incident reports;
+- sample input/output and a commercial internal-use license.
+
+It requires no external LLM, API key, database, or live n8n login. The Pro workflow has been imported and executed end-to-end on n8n 2.33.7.
+
+**Pro details and purchase:** https://n8n-doctor.167-233-67-162.sslip.io/
+
 ## Privacy boundary
 
 The Actor does not need n8n credentials and does not log in to a live n8n instance. Common secret-like strings in error messages are redacted and returned messages are truncated. Users should still remove unnecessary sensitive execution data before submitting JSON.
@@ -35,7 +50,7 @@ The Actor does not need n8n credentials and does not log in to a live n8n instan
 
 Each run writes one diagnosis to the default dataset and to the `DIAGNOSIS` key-value record. A no-error input returns `NO_STRUCTURED_ERROR_FOUND` rather than inventing a root cause.
 
-## Monetization
+## Apify deployment
 
 The code supports Apify pay-per-event through the `incident-diagnosed` event. Configure that event in Apify Console and set `ACTOR_CHARGE_EVENT_NAME=incident-diagnosed` for the production Actor.
 
