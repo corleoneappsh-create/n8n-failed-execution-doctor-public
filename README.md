@@ -18,6 +18,14 @@ This is not another generic workflow linter. It focuses on incidents that alread
 It is deterministic: no external LLM call is required for the core diagnosis, which keeps latency and platform cost low.
 
 
+## Free Lite n8n workflow
+
+Want to run the same core diagnosis entirely inside n8n? Import [`examples/n8n-failed-execution-doctor-lite.json`](examples/n8n-failed-execution-doctor-lite.json).
+
+The Lite workflow uses only two core n8n nodes (`Execute Workflow Trigger` + `Code`), requires no external API key or LLM, and returns the failing node, root-cause category, sanitized error message, and a focused next diagnostic step for one incident item.
+
+The exact JSON in this repository has been imported successfully into an isolated **n8n 2.33.7** runtime. It is inactive by default.
+
 ## Pro workflow — batch diagnosis and incident reports
 
 If you need a self-contained n8n workflow rather than the Actor, **n8n Failed Execution Doctor Pro v0.3.0** adds:
