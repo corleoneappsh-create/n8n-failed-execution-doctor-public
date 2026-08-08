@@ -1,5 +1,8 @@
 # n8n Failed Execution Doctor
 
+> **Unofficial community tool.** This project is not affiliated with, endorsed by, or sponsored by n8n GmbH.
+
+
 Diagnose a failed n8n execution without connecting to the customer's live n8n instance.
 
 Provide two JSON objects:
