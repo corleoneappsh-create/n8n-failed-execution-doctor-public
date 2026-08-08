@@ -7,7 +7,6 @@
 		"node": ">=18.0.0"
 	},
 	"dependencies": {
-		"@crawlee/cheerio": "^3.15.3",
 		"apify": "^3.7.0"
 	},
 	"devDependencies": {
@@ -25,7 +24,7 @@
 		"vitest": "^4.1.0"
 	},
 	"scripts": {
-		"start": "npm run start:dev",
+		"start": "node dist/main.js",
 		"start:prod": "node dist/main.js",
 		"start:dev": "tsx src/main.ts",
 		"build": "tsc",
