@@ -3,7 +3,13 @@
 > **Unofficial community tool.** This project is not affiliated with, endorsed by, or sponsored by n8n GmbH.
 
 
+[![CI](https://github.com/corleoneappsh-create/n8n-failed-execution-doctor-public/actions/workflows/test.yaml/badge.svg)](https://github.com/corleoneappsh-create/n8n-failed-execution-doctor-public/actions/workflows/test.yaml)
+[![Release](https://img.shields.io/github/v/release/corleoneappsh-create/n8n-failed-execution-doctor-public)](https://github.com/corleoneappsh-create/n8n-failed-execution-doctor-public/releases)
+
+
 Diagnose a failed n8n execution without connecting to the customer's live n8n instance.
+
+[![n8n Failed Execution Doctor Pro preview](https://n8n-doctor.167-233-67-162.sslip.io/n8n-doctor-pro-hero.png)](https://n8n-doctor.167-233-67-162.sslip.io/?src=github)
 
 Provide two JSON objects:
 - the exported n8n workflow;
@@ -39,6 +45,21 @@ If you need a self-contained n8n workflow rather than the Actor, **n8n Failed Ex
 It requires no external LLM, API key, database, or live n8n login. The Pro workflow has been imported and executed end-to-end on n8n 2.33.7.
 
 **Pro details and purchase:** https://n8n-doctor.167-233-67-162.sslip.io/?src=github
+
+### Lite vs Pro
+
+| Capability | Free Lite | Pro v0.3.0 |
+|---|:---:|:---:|
+| Failing/last node detection | ✓ | ✓ |
+| Root-cause classification | ✓ | ✓ |
+| Sanitized error evidence | ✓ | ✓ |
+| Focused next diagnostic step | ✓ | ✓ |
+| Batch incident diagnosis | — | ✓ |
+| Severity heuristic | — | ✓ |
+| Retry-safety guidance | — | ✓ |
+| Workflow risk hints | — | ✓ |
+| Markdown incident report | — | ✓ |
+| Sample input/output package | — | ✓ |
 
 ## Privacy boundary
 
