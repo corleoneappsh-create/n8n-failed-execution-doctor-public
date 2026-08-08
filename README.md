@@ -26,7 +26,7 @@ It is deterministic: no external LLM call is required for the core diagnosis, wh
 
 ## Free Lite n8n workflow
 
-Want to run the same core diagnosis entirely inside n8n? Import [`examples/n8n-failed-execution-doctor-lite.json`](examples/n8n-failed-execution-doctor-lite.json).
+Want to run the same core diagnosis entirely inside n8n? **[Download the Lite workflow JSON](https://github.com/corleoneappsh-create/n8n-failed-execution-doctor-public/releases/latest/download/n8n-failed-execution-doctor-lite.json)** or inspect [`examples/n8n-failed-execution-doctor-lite.json`](examples/n8n-failed-execution-doctor-lite.json).
 
 The Lite workflow uses only two core n8n nodes (`Execute Workflow Trigger` + `Code`), requires no external API key or LLM, and returns the failing node, root-cause category, sanitized error message, and a focused next diagnostic step for one incident item.
 
