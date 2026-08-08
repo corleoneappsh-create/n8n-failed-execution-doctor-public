@@ -30,7 +30,7 @@ If you need a self-contained n8n workflow rather than the Actor, **n8n Failed Ex
 
 It requires no external LLM, API key, database, or live n8n login. The Pro workflow has been imported and executed end-to-end on n8n 2.33.7.
 
-**Pro details and purchase:** https://n8n-doctor.167-233-67-162.sslip.io/
+**Pro details and purchase:** https://n8n-doctor.167-233-67-162.sslip.io/?src=github
 
 ## Privacy boundary
 
