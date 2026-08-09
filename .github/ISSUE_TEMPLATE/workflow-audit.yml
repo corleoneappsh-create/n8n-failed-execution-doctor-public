@@ -1,0 +1,61 @@
+name: Request an n8n workflow audit
+description: Share a redacted workflow problem for a scoped reliability or debugging review.
+title: "[AUDIT] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for a potential paid audit or implementation discussion. Do not paste credentials, tokens, API keys, PHI, customer records, or other sensitive data. A redacted or synthetic example is enough to start.
+  - type: dropdown
+    id: need
+    attributes:
+      label: What do you need help with?
+      options:
+        - Failed execution / incident diagnosis
+        - Reliability audit before deployment
+        - Error handling, retries, or idempotency
+        - Workflow architecture / maintainability
+        - API or CRM integration debugging
+        - Other n8n automation work
+    validations:
+      required: true
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Workflow or problem summary
+      description: Describe the workflow, the failing or risky step, and the expected behavior. Use only redacted or synthetic data.
+      placeholder: "Example: webhook -> validation -> CRM upsert -> Slack. Duplicate deliveries sometimes create duplicate CRM records."
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: What evidence can you share safely?
+      description: Optional redacted workflow JSON, sanitized error text, screenshots, node names, or acceptance criteria.
+    validations:
+      required: false
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Environment
+      options:
+        - Sandbox / staging
+        - Production issue with redacted evidence
+        - Planning / pre-deployment
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      placeholder: "Example: identify root cause and return a tested fix plan; or harden one workflow with bounded retries and duplicate-action protection."
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety check
+      options:
+        - label: I have removed credentials, secrets, personal data, PHI, and other sensitive information from anything shared here.
+          required: true
