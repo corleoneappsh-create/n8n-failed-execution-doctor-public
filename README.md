@@ -13,6 +13,18 @@ Diagnose a failed n8n execution without connecting to the customer's live n8n in
 
 **Need hands-on help?** [Request a scoped n8n workflow audit](https://github.com/corleoneappsh-create/n8n-failed-execution-doctor-public/issues/new?template=workflow-audit.yml) using redacted or synthetic evidence. Never include credentials or sensitive customer data.
 
+### Good fit for real production breakage
+
+Use the Doctor when an n8n workflow *runs* but the business result is missing or unreliable—for example:
+
+- CRM syncs that silently stop updating records;
+- lead-routing workflows that drop, duplicate, or misroute leads;
+- webhook/API steps failing on 401/403 auth errors, 429 rate limits, timeouts, or bad payloads;
+- expression/item-linking failures that only appear with real data;
+- recurring incidents where you need a concrete failing node and next diagnostic step before touching production.
+
+If the same incident keeps returning, the scoped audit path is designed for one workflow first: reproduce the failure with redacted evidence, identify the brittle handoff, define the smallest safe fix, and leave a short regression checklist.
+
 [![n8n Failed Execution Doctor Pro preview](https://n8n-doctor.167-233-67-162.sslip.io/n8n-doctor-pro-hero.png)](https://n8n-doctor.167-233-67-162.sslip.io/?src=github)
 
 Provide two JSON objects:
