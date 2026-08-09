@@ -9,6 +9,8 @@
 
 Diagnose a failed n8n execution without connecting to the customer's live n8n instance.
 
+**Try it free:** [Run the public n8n Failed Execution Doctor on Apify](https://apify.com/boris-automation/my-actor) with a synthetic example or your sanitized workflow/execution JSON. No live n8n credentials are required.
+
 [![n8n Failed Execution Doctor Pro preview](https://n8n-doctor.167-233-67-162.sslip.io/n8n-doctor-pro-hero.png)](https://n8n-doctor.167-233-67-162.sslip.io/?src=github)
 
 Provide two JSON objects:
