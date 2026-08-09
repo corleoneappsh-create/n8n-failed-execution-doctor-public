@@ -17,3 +17,8 @@ jobs:
             - run: npm ci
             - run: npm run build
             - run: npm test
+            - name: n8n workflow preflight
+              uses: corleoneappsh-create/n8n-workflow-preflight-action@v1
+              with:
+                  path: examples
+                  fail-on: error
