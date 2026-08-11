@@ -11,6 +11,8 @@ Diagnose a failed n8n execution without connecting to the customer's live n8n in
 
 **Try it free:** [Run the public n8n Failed Execution Doctor on Apify](https://apify.com/boris-automation/my-actor) with a synthetic example or your sanitized workflow/execution JSON. No live n8n credentials are required.
 
+**Troubleshooting first?** Use the free [n8n Failed Execution Troubleshooting Checklist](docs/n8n-failed-execution-troubleshooting-checklist.md) before changing a production workflow.
+
 **Need hands-on help?** [Request a scoped n8n workflow audit](https://github.com/corleoneappsh-create/n8n-failed-execution-doctor-public/issues/new?template=workflow-audit.yml) using redacted or synthetic evidence. Never include credentials or sensitive customer data.
 
 ### Good fit for real production breakage
