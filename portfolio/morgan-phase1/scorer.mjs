@@ -7,15 +7,15 @@ export function scoreCallEnded(event) {
   }
 
   let score = 0;
-  if (event.need_confirmed === true) score += 25;
-  if (event.budget_fit === true) score += 20;
-  if (Number.isFinite(event.timeline_days) && event.timeline_days <= 30) score += 20;
-  if (event.decision_maker === true) score += 15;
-  if (event.meeting_requested === true) score += 20;
+  if (event.need_confirmed === true) score += 30;
+  if (event.budget_fit === true) score += 25;
+  if (Number.isFinite(event.timeline_days) && event.timeline_days <= 30) score += 15;
+  if (event.decision_maker === true) score += 20;
+  if (event.meeting_requested === true) score += 10;
 
   const scoreBand = score >= 70
     ? 'high_intent'
-    : score >= 35
+    : score >= 40
       ? 'qualified_followup'
       : 'low_intent';
 
