@@ -19,6 +19,12 @@ export function scoreCallEnded(event) {
       ? 'qualified_followup'
       : 'low_intent';
 
+  const routeAction = scoreBand === 'high_intent'
+    ? 'book_and_alert'
+    : scoreBand === 'qualified_followup'
+      ? 'follow_up'
+      : 'nurture';
+
   return {
     call_id: event.call_id,
     lead_id: event.lead_id,
@@ -26,6 +32,7 @@ export function scoreCallEnded(event) {
     dedupe_key: `${event.call_id}:${event.event_type}`,
     score,
     score_band: scoreBand,
+    route_action: routeAction,
     alert: scoreBand === 'high_intent',
     booking_requested: event.meeting_requested === true,
     summary: event.summary ?? '',
