@@ -7,11 +7,18 @@ const fixtures = JSON.parse(
 );
 
 describe('Morgan Phase 1 scorer', () => {
+  const expectedRoute = {
+    high_intent: 'book_and_alert',
+    qualified_followup: 'follow_up',
+    low_intent: 'nurture',
+  };
+
   for (const fixture of fixtures) {
     it(fixture.name, () => {
       const result = scoreCallEnded(fixture.event);
       expect(result.score).toBe(fixture.expected.score);
       expect(result.score_band).toBe(fixture.expected.score_band);
+      expect(result.route_action).toBe(expectedRoute[fixture.expected.score_band]);
       expect(result.alert).toBe(fixture.expected.alert);
       expect(result.booking_requested).toBe(fixture.expected.booking_requested);
       expect(result.dedupe_key).toBe(fixture.expected.dedupe_key);
