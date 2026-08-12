@@ -2,10 +2,8 @@
 
 > **Unofficial community tool.** This project is not affiliated with, endorsed by, or sponsored by n8n GmbH.
 
-
 [![CI](https://github.com/corleoneappsh-create/n8n-failed-execution-doctor-public/actions/workflows/test.yaml/badge.svg)](https://github.com/corleoneappsh-create/n8n-failed-execution-doctor-public/actions/workflows/test.yaml)
 [![Release](https://img.shields.io/github/v/release/corleoneappsh-create/n8n-failed-execution-doctor-public)](https://github.com/corleoneappsh-create/n8n-failed-execution-doctor-public/releases)
-
 
 Diagnose a failed n8n execution without connecting to the customer's live n8n instance.
 
@@ -14,6 +12,18 @@ Diagnose a failed n8n execution without connecting to the customer's live n8n in
 **Troubleshooting first?** Use the free [n8n Failed Execution Troubleshooting Checklist](docs/n8n-failed-execution-troubleshooting-checklist.md) before changing a production workflow.
 
 **Need hands-on help?** [Request a scoped n8n workflow audit](https://github.com/corleoneappsh-create/n8n-failed-execution-doctor-public/issues/new?template=workflow-audit.yml) using redacted or synthetic evidence. Never include credentials or sensitive customer data.
+
+### Paid audit / repair path
+
+Start with one workflow, not a vague transformation project. A scoped paid engagement can cover:
+
+- reproducing one incident from redacted or synthetic evidence;
+- identifying the failing or brittle handoff;
+- defining the smallest safe repair or proof-of-fix;
+- adding a focused regression check for the failure path;
+- returning a short handoff note or runbook so the workflow is maintainable afterward.
+
+The intake asks for urgency, preferred engagement type, and an optional budget range so the first step can stay bounded. No live credentials are required to start the discussion, and no production mutation is implied by submitting the form.
 
 ### Good fit for real production breakage
 
@@ -40,7 +50,6 @@ The Actor returns the failing node, node type, normalized error category, saniti
 This is not another generic workflow linter. It focuses on incidents that already happened: failed runs, timeouts, authentication failures, rate limits, invalid API payloads, expression/item-linking errors, and network failures.
 
 It is deterministic: no external LLM call is required for the core diagnosis, which keeps latency and platform cost low.
-
 
 ## Free Lite n8n workflow
 
