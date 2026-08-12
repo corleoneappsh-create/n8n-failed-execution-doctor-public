@@ -1,0 +1,67 @@
+[
+  {
+    "name": "high-intent",
+    "event": {
+      "call_id": "call_test_001",
+      "lead_id": "lead_test_001",
+      "event_type": "call.ended",
+      "need_confirmed": true,
+      "budget_fit": true,
+      "timeline_days": 14,
+      "decision_maker": true,
+      "meeting_requested": true,
+      "transcript_url": "https://example.invalid/transcript/call_test_001",
+      "recording_url": "https://example.invalid/recording/call_test_001",
+      "summary": "Synthetic test lead requested a meeting."
+    },
+    "expected": {
+      "score": 100,
+      "score_band": "high_intent",
+      "alert": true,
+      "booking_requested": true,
+      "dedupe_key": "call_test_001:call.ended"
+    }
+  },
+  {
+    "name": "qualified-followup",
+    "event": {
+      "call_id": "call_test_002",
+      "lead_id": "lead_test_002",
+      "event_type": "call.ended",
+      "need_confirmed": true,
+      "budget_fit": false,
+      "timeline_days": 21,
+      "decision_maker": false,
+      "meeting_requested": false,
+      "summary": "Synthetic test lead has a near-term need but needs budget review."
+    },
+    "expected": {
+      "score": 45,
+      "score_band": "qualified_followup",
+      "alert": false,
+      "booking_requested": false,
+      "dedupe_key": "call_test_002:call.ended"
+    }
+  },
+  {
+    "name": "low-intent",
+    "event": {
+      "call_id": "call_test_003",
+      "lead_id": "lead_test_003",
+      "event_type": "call.ended",
+      "need_confirmed": false,
+      "budget_fit": false,
+      "timeline_days": 120,
+      "decision_maker": false,
+      "meeting_requested": false,
+      "summary": "Synthetic test lead is researching only."
+    },
+    "expected": {
+      "score": 0,
+      "score_band": "low_intent",
+      "alert": false,
+      "booking_requested": false,
+      "dedupe_key": "call_test_003:call.ended"
+    }
+  }
+]
