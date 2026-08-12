@@ -1,0 +1,42 @@
+name: Report a product bug
+description: Report a reproducible bug in the free/public n8n Failed Execution Doctor.
+title: "[BUG] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for defects in the public tool itself. For help debugging your own n8n workflow or a paid scoped repair, use the workflow audit form instead. Never include credentials, tokens, customer records, PHI, or other sensitive data.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Bug summary
+      description: What did the public tool do incorrectly?
+      placeholder: "Example: a sanitized timeout error was classified as network instead of timeout."
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Minimal reproduction
+      description: Provide the smallest synthetic or redacted input needed to reproduce the bug.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety check
+      options:
+        - label: I removed credentials, secrets, personal data, PHI, and other sensitive information from this report.
+          required: true

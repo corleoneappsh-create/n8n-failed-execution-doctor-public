@@ -52,6 +52,38 @@ body:
       placeholder: "Example: identify root cause and return a tested fix plan; or harden one workflow with bounded retries and duplicate-action protection."
     validations:
       required: true
+  - type: dropdown
+    id: engagement
+    attributes:
+      label: Preferred engagement
+      description: This helps scope the smallest useful paid step without committing either side before review.
+      options:
+        - Diagnosis / audit only
+        - Small paid repair or proof-of-fix
+        - Fixed-scope implementation
+        - Ongoing maintenance / reliability support
+        - Not sure yet
+    validations:
+      required: true
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: Urgency
+      options:
+        - Blocking production now
+        - Needed this week
+        - Needed this month
+        - Planning / no hard deadline
+    validations:
+      required: true
+  - type: textarea
+    id: budget
+    attributes:
+      label: Budget or approved range
+      description: Optional. A rough range is enough; leave blank if you need scope first.
+      placeholder: "Example: fixed budget up to $300, or need a scoped quote first."
+    validations:
+      required: false
   - type: checkboxes
     id: safety
     attributes:
