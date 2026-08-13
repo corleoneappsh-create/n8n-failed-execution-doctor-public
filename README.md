@@ -86,7 +86,7 @@ If you also want to catch workflow risks **before deployment**, the Reliability 
 | Severity heuristic | — | ✓ |
 | Retry-safety guidance | — | ✓ |
 | Workflow risk hints | — | ✓ |
-| Markdown incident report | ✓ | ✓ |
+| Markdown incident report | — | ✓ |
 | Sample input/output package | — | ✓ |
 
 ## Privacy boundary
