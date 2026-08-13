@@ -27,7 +27,7 @@ Use the Doctor when an n8n workflow *runs* but the business result is missing or
 
 If the same incident keeps returning, the scoped audit path is designed for one workflow first: reproduce the failure with redacted evidence, identify the brittle handoff, define the smallest safe fix, and leave a short regression checklist.
 
-[![n8n Failed Execution Doctor Pro preview](https://n8n-doctor.167-233-67-162.sslip.io/n8n-doctor-pro-hero.png)](https://n8n-doctor.167-233-67-162.sslip.io/?src=github)
+[![n8n Failed Execution Doctor Pro preview](https://n8n-doctor.167-233-67-162.sslip.io/n8n-doctor-pro-hero.png)](https://n8n-doctor.167-233-67-162.sslip.io/?src=github_doctor)
 
 Provide two JSON objects:
 - the exported n8n workflow;
@@ -62,13 +62,17 @@ If you need a self-contained n8n workflow rather than the Actor, **n8n Failed Ex
 
 It requires no external LLM, API key, database, or live n8n login. The Pro workflow has been imported and executed end-to-end on n8n 2.33.7.
 
-**Pro details and purchase:** https://n8n-doctor.167-233-67-162.sslip.io/?src=github
+**Buy Incident Doctor Pro — $19:** https://zbewt1-yh.myshopify.com/cart/43168384745534:1?checkout&ref=github_doctor
+
+**See full Pro details:** https://n8n-doctor.167-233-67-162.sslip.io/?src=github_doctor
 
 ### Reliability Toolkit bundle — $29
 
 If you also want to catch workflow risks **before deployment**, the Reliability Toolkit Pro includes Incident Doctor Pro plus a zero-dependency preflight scanner, Markdown/JSON reports, broken-connection and webhook checks, domain/credential inventory, and a ready-to-use GitHub CI template.
 
-**Toolkit details:** https://n8n-doctor.167-233-67-162.sslip.io/?src=github
+**Buy Toolkit bundle — $29:** https://zbewt1-yh.myshopify.com/cart/43173943803966:1?checkout&ref=github_doctor_toolkit
+
+**Toolkit details:** https://n8n-doctor.167-233-67-162.sslip.io/?src=github_doctor_toolkit
 
 ### Lite vs Pro
 
@@ -82,7 +86,7 @@ If you also want to catch workflow risks **before deployment**, the Reliability 
 | Severity heuristic | — | ✓ |
 | Retry-safety guidance | — | ✓ |
 | Workflow risk hints | — | ✓ |
-| Markdown incident report | — | ✓ |
+| Markdown incident report | ✓ | ✓ |
 | Sample input/output package | — | ✓ |
 
 ## Privacy boundary
