@@ -13,7 +13,7 @@ Diagnose a failed n8n execution without connecting to the customer's live n8n in
 
 **Troubleshooting first?** Use the free [n8n Failed Execution Troubleshooting Checklist](docs/n8n-failed-execution-troubleshooting-checklist.md) before changing a production workflow.
 
-**Need hands-on help?** [Request a scoped n8n workflow audit](https://github.com/corleoneappsh-create/n8n-failed-execution-doctor-public/issues/new?template=workflow-audit.yml) using redacted or synthetic evidence. Never include credentials or sensitive customer data.
+**Need hands-on help?** The fixed-scope **n8n Workflow Reliability Audit is $49 for one workflow**. See the [synthetic sample deliverable](https://github.com/corleoneappsh-create/n8n-workflow-preflight-action/blob/main/examples/SAMPLE_RELIABILITY_AUDIT.md), [open a redacted audit request](https://github.com/corleoneappsh-create/n8n-failed-execution-doctor-public/issues/new?template=workflow-audit.yml), or [buy the audit directly](https://zbewt1-yh.myshopify.com/products/n8n-workflow-reliability-audit-1-workflow?ref=github_doctor_audit&utm_source=github&utm_medium=repository&utm_campaign=n8n_workflow_audit&utm_content=doctor_top_cta). Never include credentials or sensitive customer data.
 
 ### Good fit for real production breakage
 
