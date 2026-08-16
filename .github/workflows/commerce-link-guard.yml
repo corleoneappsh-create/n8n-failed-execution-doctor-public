@@ -1,0 +1,23 @@
+name: Commerce Link Guard
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  guard-shopify-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reject Shopify cart permalinks
+        shell: bash
+        run: |
+          set -euo pipefail
+          if grep -RInE --exclude-dir=.git --exclude='commerce-link-guard.yml' 'https://[^[:space:]"'"'"'<>]*myshopify\.com/cart/' .; then
+            echo 'Broken-risk Shopify cart permalink detected. Use a stable /products/<handle> URL instead.' >&2
+            exit 1
+          fi
+          echo 'PASS: no Shopify cart permalinks found.'
