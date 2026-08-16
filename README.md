@@ -27,7 +27,7 @@ Use the Doctor when an n8n workflow *runs* but the business result is missing or
 
 If the same incident keeps returning, the scoped audit path is designed for one workflow first: reproduce the failure with redacted evidence, identify the brittle handoff, define the smallest safe fix, and leave a short regression checklist.
 
-[![n8n Failed Execution Doctor Pro preview](https://n8n-doctor.167-233-67-162.sslip.io/n8n-doctor-pro-hero.png)](https://n8n-doctor.167-233-67-162.sslip.io/?src=github_doctor)
+[![n8n Failed Execution Doctor Pro preview](https://n8n-doctor.167-233-67-162.sslip.io/n8n-doctor-pro-hero.png)](https://zbewt1-yh.myshopify.com/products/n8n-failed-execution-doctor-pro?utm_source=github&utm_medium=repository&utm_campaign=n8n_doctor_pro&utm_content=hero)
 
 Provide two JSON objects:
 - the exported n8n workflow;
@@ -64,7 +64,7 @@ It requires no external LLM, API key, database, or live n8n login. The Pro workf
 
 **Buy Incident Doctor Pro — $19:** https://zbewt1-yh.myshopify.com/products/n8n-failed-execution-doctor-pro?utm_source=github&utm_medium=repository&utm_campaign=n8n_doctor_pro
 
-**See full Pro details:** https://n8n-doctor.167-233-67-162.sslip.io/?src=github_doctor
+**See full Pro details:** https://zbewt1-yh.myshopify.com/products/n8n-failed-execution-doctor-pro?utm_source=github&utm_medium=repository&utm_campaign=n8n_doctor_pro&utm_content=details
 
 ### Reliability Toolkit bundle — $29
 
@@ -72,7 +72,7 @@ If you also want to catch workflow risks **before deployment**, the Reliability 
 
 **Buy Toolkit bundle — $29:** https://zbewt1-yh.myshopify.com/products/n8n-reliability-toolkit-pro?utm_source=github&utm_medium=repository&utm_campaign=n8n_reliability_toolkit
 
-**Toolkit details:** https://n8n-doctor.167-233-67-162.sslip.io/?src=github_doctor_toolkit
+**Toolkit details:** https://zbewt1-yh.myshopify.com/products/n8n-reliability-toolkit-pro?utm_source=github&utm_medium=repository&utm_campaign=n8n_reliability_toolkit&utm_content=details
 
 ### Lite vs Pro
 
