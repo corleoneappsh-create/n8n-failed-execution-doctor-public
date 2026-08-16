@@ -62,7 +62,7 @@ If you need a self-contained n8n workflow rather than the Actor, **n8n Failed Ex
 
 It requires no external LLM, API key, database, or live n8n login. The Pro workflow has been imported and executed end-to-end on n8n 2.33.7.
 
-**Buy Incident Doctor Pro — $19:** https://zbewt1-yh.myshopify.com/cart/43168384745534:1?checkout&ref=github_doctor
+**Buy Incident Doctor Pro — $19:** https://zbewt1-yh.myshopify.com/cart/43168384745534:1
 
 **See full Pro details:** https://n8n-doctor.167-233-67-162.sslip.io/?src=github_doctor
 
@@ -70,7 +70,7 @@ It requires no external LLM, API key, database, or live n8n login. The Pro workf
 
 If you also want to catch workflow risks **before deployment**, the Reliability Toolkit Pro includes Incident Doctor Pro plus a zero-dependency preflight scanner, Markdown/JSON reports, broken-connection and webhook checks, domain/credential inventory, and a ready-to-use GitHub CI template.
 
-**Buy Toolkit bundle — $29:** https://zbewt1-yh.myshopify.com/cart/43173943803966:1?checkout&ref=github_doctor_toolkit
+**Buy Toolkit bundle — $29:** https://zbewt1-yh.myshopify.com/cart/43173943803966:1
 
 **Toolkit details:** https://n8n-doctor.167-233-67-162.sslip.io/?src=github_doctor_toolkit
 

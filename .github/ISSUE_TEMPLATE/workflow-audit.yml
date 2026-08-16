@@ -9,7 +9,7 @@ body:
 
         **Fixed-scope audit: $49 for one n8n workflow.** You receive written findings, prioritized fixes, and a bounded regression checklist. See the [synthetic sample audit](https://github.com/corleoneappsh-create/n8n-workflow-preflight-action/blob/main/examples/SAMPLE_RELIABILITY_AUDIT.md) before buying.
 
-        If the scope fits, [buy the one-workflow audit for $49](https://zbewt1-yh.myshopify.com/cart/43194519289918:1?checkout&ref=github_doctor_audit_form). You can submit this redacted intake before or after checkout; no live n8n credentials are required for the initial review.
+        If the scope fits, [buy the one-workflow audit for $49](https://zbewt1-yh.myshopify.com/cart/43194519289918:1). You can submit this redacted intake before or after checkout; no live n8n credentials are required for the initial review.
   - type: dropdown
     id: need
     attributes:
