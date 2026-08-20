@@ -80,5 +80,6 @@ The public **n8n Failed Execution Doctor Lite** can classify common failed-execu
 
 - Free Lite workflow: https://github.com/corleoneappsh-create/n8n-failed-execution-doctor-public/releases/latest/download/n8n-failed-execution-doctor-lite.json
 - Public Doctor / Pro details: https://n8n-doctor.167-233-67-162.sslip.io/?src=github-checklist
+- Broader reliability review: [n8n Workflow Reliability Audit Checklist](n8n-workflow-reliability-audit-checklist.md)
 
 The paid Pro/Toolkit path is optional. The checklist above is intentionally useful on its own.
